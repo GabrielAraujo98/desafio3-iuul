@@ -20,8 +20,38 @@ var pessoa_1 = require("./pessoa");
 var Cliente = /** @class */ (function (_super) {
     __extends(Cliente, _super);
     function Cliente() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this._enderecos = [];
+        return _this;
     }
+    Object.defineProperty(Cliente.prototype, "vip", {
+        get: function () {
+            return this._vip;
+        },
+        set: function (value) {
+            this._vip = value;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Cliente.prototype, "enderecos", {
+        get: function () {
+            return this._enderecos;
+        },
+        set: function (value) {
+            this._enderecos = value;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Cliente.prototype.adicionarEnderecos = function (endereco) {
+        this._enderecos.push(endereco);
+    };
+    Cliente.prototype.listarEderecos = function () {
+        for (var i = 0; i <= this.enderecos.length; i++) {
+            this.enderecos[i];
+        }
+    };
     return Cliente;
 }(pessoa_1.Pessoa));
 exports.Cliente = Cliente;
