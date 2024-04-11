@@ -6,6 +6,7 @@ var cliente = new cliente_1.Cliente();
 cliente.nome = "João";
 cliente.cpf = "096.182.374-09";
 cliente.telefone = "82 98832-5678";
+cliente.numero = "232323232";
 var endereco1 = new endereco_1.Endereco("58058-190", "Rua Barbosa", "681", "Apartamento 608", "Rio Formoso", "RR");
 var endereco2 = new endereco_1.Endereco("39058-190", "Rua Fidalgia", "84", "Casa", "Rio Julho", "PR");
 cliente.adicionarEnderecos(endereco1);
@@ -16,3 +17,4 @@ console.log("Telefone do Cliente " + cliente.telefone);
 console.log("Endereços ");
 console.log(cliente.listarEderecos());
 console.log("Cliente existe? " + cliente.autenticar());
+//console.log("Debito " + conta.depositar(500))

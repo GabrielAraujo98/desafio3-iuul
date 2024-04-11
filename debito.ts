@@ -6,8 +6,8 @@ export class Debito{
         return this._valor;
     }
 
-    public set valor(value: Number){
-        this._valor = value;
+    public set valor(limite: Number){
+        this._valor = limite;
     }
 
     public get data(){

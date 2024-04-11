@@ -1,10 +1,13 @@
 import { Pessoa } from "./pessoa";
 import { Endereco } from "./endereco";
+import { Conta } from "./conta";
+import { IUsurario } from "./iusuario";
 
-export class Cliente extends Pessoa{
+export class Cliente extends Pessoa implements IUsurario{
 
     private _vip: Boolean;
     private _enderecos: Endereco[] = [];
+    private _contas: Conta[] = [];
 
     public get vip(){
         return this._vip;
@@ -36,6 +39,20 @@ export class Cliente extends Pessoa{
         }else{
             return false;
         }
+    }
+
+    //Conta
+
+    public get contas(){
+        return this._contas
+    }
+
+    public set contas(value: Conta[]) {
+        this._contas = value;
+    }
+
+    public adicionarContas(conta: Conta){
+        this._contas.push(conta);        
     }
 
 }

@@ -44,6 +44,30 @@ var Cliente = /** @class */ (function (_super) {
         enumerable: false,
         configurable: true
     });
+    Object.defineProperty(Cliente.prototype, "numero", {
+        get: function () {
+            return this._conta.numero;
+        },
+        set: function (value) {
+            this._conta.numero = value;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Cliente.prototype, "debito", {
+        get: function () {
+            return this._conta.debito;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Cliente.prototype, "credito", {
+        get: function () {
+            return this._conta.credito;
+        },
+        enumerable: false,
+        configurable: true
+    });
     Cliente.prototype.adicionarEnderecos = function (endereco) {
         this._enderecos.push(endereco);
     };

@@ -1,4 +1,6 @@
 import { Cliente } from "./cliente";
+import { Conta } from "./conta";
+import { ContaCorrente } from "./contaCorrente";
 import { Endereco } from "./endereco";
 
 var cliente = new Cliente();
@@ -13,6 +15,11 @@ var endereco2 = new Endereco("39058-190", "Rua Fidalgia", "84", "Casa", "Rio Jul
 cliente.adicionarEnderecos(endereco1);
 cliente.adicionarEnderecos(endereco2);
 
+var conta1 = new ContaCorrente()
+
+conta1.numero = "2222";
+conta1.limite = 1000.23;
+
 
 console.log("Nome do Cliente " + cliente.nome);
 console.log("CPF do Cliente " + cliente.cpf);
@@ -20,3 +27,5 @@ console.log("Telefone do Cliente " + cliente.telefone);
 console.log("Endereços ");
 console.log(cliente.listarEderecos());
 console.log("Cliente existe? " + cliente.autenticar());
+
+//console.log("Debito " + conta.depositar(500))
