@@ -48,8 +48,14 @@ var Cliente = /** @class */ (function (_super) {
         this._enderecos.push(endereco);
     };
     Cliente.prototype.listarEderecos = function () {
-        for (var i = 0; i <= this.enderecos.length; i++) {
-            this.enderecos[i];
+        return this._enderecos;
+    };
+    Cliente.prototype.autenticar = function () {
+        if (this) {
+            return true;
+        }
+        else {
+            return false;
         }
     };
     return Cliente;

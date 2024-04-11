@@ -23,13 +23,19 @@ export class Cliente extends Pessoa{
     }
 
     public adicionarEnderecos(endereco: Endereco){
-        this._enderecos.push(endereco);
+        this._enderecos.push(endereco);        
     }
 
-    // public listarEderecos(){
-    //     for(var i = 0; i <= this.enderecos.length; i++){
-    //         this.enderecos[i]
-    //     }
-    // }
+    public listarEderecos(){
+        return this._enderecos;
+    }
+
+    autenticar() {
+        if(this){
+            return true;
+        }else{
+            return false;
+        }
+    }
 
 }

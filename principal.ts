@@ -17,4 +17,6 @@ cliente.adicionarEnderecos(endereco2);
 console.log("Nome do Cliente " + cliente.nome);
 console.log("CPF do Cliente " + cliente.cpf);
 console.log("Telefone do Cliente " + cliente.telefone);
-// console.log("Endereços " + cliente.listarEderecos());
+console.log("Endereços ");
+console.log(cliente.listarEderecos());
+console.log("Cliente existe? " + cliente.autenticar());
