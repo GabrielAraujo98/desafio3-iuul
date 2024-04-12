@@ -8,28 +8,35 @@ export class Cliente extends Pessoa implements IUsurario{
     private _vip: Boolean;
     private _enderecos: Endereco[] = [];
     private _contas: Conta[] = [];
+    
+    constructor(vip: Boolean, enderecos: Endereco, contas: Conta, nome: String, cpf: String, telefone: String){
+        super(nome, cpf, telefone);
+        this._vip = vip;
+        this._enderecos.push(enderecos);
+        this._contas.push(contas);
+    }
 
-    public get vip(){
+    get vip(){
         return this._vip;
     }
 
-    public set vip(value: Boolean){
+    set vip(value: Boolean){
         this._vip = value;
     }
 
-    public get enderecos(){
+    get enderecos(){
         return this._enderecos
     }
 
-    public set enderecos(value: Endereco[]) {
+    set enderecos(value: Endereco[]) {
         this._enderecos = value;
     }
 
-    public adicionarEnderecos(endereco: Endereco){
+    adicionarEnderecos(endereco: Endereco){
         this._enderecos.push(endereco);        
     }
 
-    public listarEderecos(){
+    listarEderecos(){
         return this._enderecos;
     }
 
@@ -43,15 +50,15 @@ export class Cliente extends Pessoa implements IUsurario{
 
     //Conta
 
-    public get contas(){
+    get contas(){
         return this._contas
     }
 
-    public set contas(value: Conta[]) {
+    set contas(value: Conta[]) {
         this._contas = value;
     }
 
-    public adicionarContas(conta: Conta){
+    adicionarContas(conta: Conta){
         this._contas.push(conta);        
     }
 

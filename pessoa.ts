@@ -4,6 +4,12 @@ export abstract class Pessoa{
     private _cpf: String;
     private _telefone: String;
 
+    constructor(nome: String, cpf: String, telefone: String){
+        this._nome = nome;
+        this._cpf = cpf;
+        this._telefone = telefone;
+    }
+
     public get nome(){
         return this._nome;
     }

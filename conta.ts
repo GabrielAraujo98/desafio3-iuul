@@ -8,6 +8,10 @@ export abstract class Conta {
     private _credito: Credito;
     private _cc: ContaCorrente;
 
+    constructor(numero: String){
+        this._numero = numero;
+    }
+
     public get numero(){
         return this._numero;
     }
@@ -44,4 +48,17 @@ export abstract class Conta {
             this._debito.valor =- value;
         }
     }
+
+    // calcularSaldo(): number {
+    //     let creditos = 0;
+    //     let debitos = 0;
+
+    //     for(let i = 0; i < this._credito.lentgh; i++){
+    //         creditos += this._credito[i].valor;
+    //     }
+    //     for(let i = 0; i < this.debito.lentgh; i++){
+    //         debitos += this._debito[i].valor;
+    //     }
+    //     return creditos - debitos;
+    // }
 }
