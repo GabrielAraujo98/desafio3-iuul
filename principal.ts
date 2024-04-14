@@ -1,6 +1,6 @@
-import { Cliente } from "./cliente";
-import { ContaCorrente } from "./contaCorrente";
-import { Endereco } from "./endereco";
+import { Cliente } from "./models/cliente";
+import { ContaCorrente } from "./models/contaCorrente";
+import { Endereco } from "./models/endereco";
 
 
 

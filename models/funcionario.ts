@@ -1,9 +1,16 @@
 import { Cargo } from "./cargo";
 import { IUsurario } from "./iusuario";
+import { Pessoa } from "./pessoa";
 
-export class Funcionario implements IUsurario{
+export class Funcionario extends Pessoa implements IUsurario{
     private _salario: Number;
     private _cargos: Cargo[] = [];
+
+    constructor(salario: Number, cargo: Cargo, nome: any, cpf: any, telefone: any){
+        super(nome, cpf, telefone)
+        this._cargos.push(cargo);
+        this._salario = salario;
+    }
 
     public get salario(){
         return this._salario;
