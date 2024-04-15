@@ -2,19 +2,24 @@ export class Credito{
     private _valor: Number;
     private _data: Date;
 
-    public get valor(){
+    constructor(valor: Number, data: Date){
+        this._valor = valor;
+        //this._data = data;
+    }
+
+    get valor(){
         return this._valor;
     }
 
-    public set valor(value: Number){
+    set valor(value: Number){
         this._valor = value;
     }
 
-    public get data(){
+    get data(){
         return this._data;
     }
 
-    public set data(value: Date){
+    set data(value: Date){
         this._data = value;
     }
 }

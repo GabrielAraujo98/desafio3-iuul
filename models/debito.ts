@@ -2,6 +2,11 @@ export class Debito{
     private _valor: Number;
     private _data: Date;
 
+    constructor(valor: Number, data: Date){
+        this._valor = valor;
+        this._data = data;
+    }
+
     public get valor(){
         return this._valor;
     }

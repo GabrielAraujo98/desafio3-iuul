@@ -2,8 +2,6 @@ import { Conta } from "./conta";
 
 export class ContaCorrente extends Conta{
     private _limite: Number;
-    private _debitos: any = Conta;
-    private _creditos: any = Conta;
 
     constructor(numero: String, limite: Number){
         super(numero);
@@ -18,16 +16,16 @@ export class ContaCorrente extends Conta{
         this._limite = value;
     }
 
-    // calcularSaldo(): number {
-    //     let creditos = 0;
-    //     let debitos = 0;
+    calcularSaldo(): Number {
+        let creditos: any = 0;
+        let debitos: any = 0;
 
-    //     for(let i = 0; i < this.creditos.lentgh; i++){
-    //         creditos += this._creditos[i].valor;
-    //     }
-    //     for(let i = 0; i < this.debitos.lentgh; i++){
-    //         debitos += this._debitos[i].valor;
-    //     }
-    //     return creditos - debitos;
-    // }
+        for(let i = 0; i < this.credito.length; i++){
+            creditos += this.credito[i].valor;
+        }
+        for(let i = 0; i < this.debito.length; i++){
+            debitos += this.debito[i].valor;
+        }
+        return creditos - debitos;
+    }
 }
