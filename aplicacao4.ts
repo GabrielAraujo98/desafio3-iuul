@@ -32,5 +32,6 @@ cliente2.contas[0].depositar(1000.00);
 //Efetuando a Transferencia da Conta Corrente para a Conta Poupança
 conta1.transferir(cliente2.contas[0], 500.00);
 
+//Imprimindo Saldo das Contas
 console.log(conta1.calcularSaldo())
 console.log(conta2.calcularSaldo())
