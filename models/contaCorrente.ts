@@ -8,12 +8,12 @@ export class ContaCorrente extends Conta{
         this._limite = limite;
     }
 
-    public get limite(){
+    get limite(){
         return this._limite;
     }
 
-    public set limite(value: Number){
-        this._limite = value;
+    set limite(value: any){
+        this._limite += value;
     }
 
     calcularSaldo(): Number {
@@ -27,5 +27,14 @@ export class ContaCorrente extends Conta{
             debitos += this.debito[i].valor;
         }
         return creditos - debitos;
+    }
+
+    transferir(contaDestino: any, valor: Number){
+        if(this._limite >= valor){
+            contaDestino.depositar(valor);
+            this.sacar(valor);
+        }else{
+            console.log("limite ou saldo Insuficiente")
+        }
     }
 }

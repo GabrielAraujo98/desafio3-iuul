@@ -4,7 +4,7 @@ export class Credito{
 
     constructor(valor: Number, data: Date){
         this._valor = valor;
-        //this._data = data;
+        this._data = data;
     }
 
     get valor(){
