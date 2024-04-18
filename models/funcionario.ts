@@ -3,24 +3,24 @@ import { IUsurario } from "./iusuario";
 import { Pessoa } from "./pessoa";
 
 export class Funcionario extends Pessoa implements IUsurario{
-    private _salario: Number;
+    private _salario: number;
     private _cargos: Cargo[] = [];
 
-    constructor(salario: Number, cargo: Cargo, nome: any, cpf: any, telefone: any){
+    constructor(salario: number, cargo: Cargo, nome: any, cpf: any, telefone: any){
         super(nome, cpf, telefone)
         this._cargos.push(cargo);
         this._salario = salario;
     }
 
-    public get salario(){
+    get salario(){
         return this._salario;
     }
 
-    public set salario(value: Number){
+    set salario(value: number){
         this._salario = value;
     }
 
-    public adicionarCargo(cargo: Cargo){
+    adicionarCargo(cargo: Cargo){
         return this._cargos.push(cargo);
     }
 

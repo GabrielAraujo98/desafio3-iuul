@@ -15,51 +15,51 @@ export class Endereco {
         this._uf = uf;
     }
 
-    public get cep(){
+    get cep(){
         return this._cep;
     }
 
-    public set cep(value: String){
+    set cep(value: String){
         this._cep = value;
     }
 
-    public get logradouro(){
+    get logradouro(){
         return this._logradouro;
     }
 
-    public set logradouro(value: String){
+    set logradouro(value: String){
         this._logradouro = value;
     }
 
-    public get numero(){
+    get numero(){
         return this._numero;
     }
 
-    public set numero(value: String){
+    set numero(value: String){
         this._numero = value;
     }
 
-    public get complemento(){
+    get complemento(){
         return this._complemento;
     }
 
-    public set complemento(value: String){
+    set complemento(value: String){
         this._complemento = value;
     }
 
-    public get cidade(){
+    get cidade(){
         return this._cidade;
     }
 
-    public set cidade(value: String){
+    set cidade(value: String){
         this._cidade = value;
     }
 
-    public get uf(){
+    get uf(){
         return this._uf;
     }
 
-    public set uf(value: String){
+    set uf(value: String){
         this._uf = value;
     }
 }

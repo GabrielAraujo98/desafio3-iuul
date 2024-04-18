@@ -6,7 +6,7 @@ export class ContaPoupanca extends Conta{
         super(numero);
     }
 
-    calcularSaldo(): Number {
+    calcularSaldo(): number {
         let creditos: any = 0;
         let debitos: any = 0;
 

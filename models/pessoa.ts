@@ -10,26 +10,26 @@ export abstract class Pessoa{
         this._telefone = telefone;
     }
 
-    public get nome(){
+    get nome(){
         return this._nome;
     }
-    public set nome(value: String){
+    set nome(value: String){
         this._nome = value;
     }
 
-    public get cpf(){
+    get cpf(){
         return this._cpf;
     }
 
-    public set cpf(value: String){
+    set cpf(value: String){
         this._cpf = value;
     }
 
-    public get telefone(){
+    get telefone(){
         return this._telefone;
     }
 
-    public set telefone(value: String){
+    set telefone(value: String){
         this._telefone = value;
     }
 

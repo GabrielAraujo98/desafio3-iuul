@@ -1,9 +1,9 @@
 import { Conta } from "./conta";
 
 export class ContaCorrente extends Conta{
-    private _limite: Number;
+    private _limite: number;
 
-    constructor(numero: String, limite: Number){
+    constructor(numero: String, limite: number){
         super(numero);
         this._limite = limite;
     }
@@ -16,7 +16,7 @@ export class ContaCorrente extends Conta{
         this._limite += value;
     }
 
-    calcularSaldo(): Number {
+    calcularSaldo(): number {
         let creditos: any = 0;
         let debitos: any = 0;
 
@@ -29,12 +29,14 @@ export class ContaCorrente extends Conta{
         return creditos - debitos;
     }
 
-    transferir(contaDestino: any, valor: Number){
-        if(this._limite >= valor){
+    transferir(contaDestino: any, valor: number){
+        var saldo = this.calcularSaldo();
+        if(this._limite + saldo >= valor){
             contaDestino.depositar(valor);
             this.sacar(valor);
+            console.log("Transferencia no valor de R$" + valor.toFixed(2) + " realizada com sucesso para a conta de número " + contaDestino.numero)
         }else{
-            console.log("limite ou saldo Insuficiente")
+            console.log("Limite ou Saldo Insuficiente")
         }
     }
 }

@@ -1,8 +1,8 @@
 export class Credito{
-    private _valor: Number;
+    private _valor: number;
     private _data: Date;
 
-    constructor(valor: Number, data: Date){
+    constructor(valor: number, data: Date){
         this._valor = valor;
         this._data = data;
     }
@@ -11,7 +11,7 @@ export class Credito{
         return this._valor;
     }
 
-    set valor(value: Number){
+    set valor(value: number){
         this._valor = value;
     }
 

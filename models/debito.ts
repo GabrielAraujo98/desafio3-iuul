@@ -1,25 +1,25 @@
 export class Debito{
-    private _valor: Number;
+    private _valor: number;
     private _data: Date;
 
-    constructor(valor: Number, data: Date){
+    constructor(valor: number, data: Date){
         this._valor = valor;
         this._data = data;
     }
 
-    public get valor(){
+    get valor(){
         return this._valor;
     }
 
-    public set valor(limite: Number){
+    set valor(limite: number){
         this._valor = limite;
     }
 
-    public get data(){
+    get data(){
         return this._data;
     }
 
-    public set data(value: Date){
+    set data(value: Date){
         this._data = value;
     }
 }
