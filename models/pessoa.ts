@@ -1,10 +1,10 @@
 export abstract class Pessoa{
 
-    private _nome: String;
-    private _cpf: String;
-    private _telefone: String;
+    private _nome: string;
+    private _cpf: string;
+    private _telefone: string;
 
-    constructor(nome: String, cpf: String, telefone: String){
+    constructor(nome: string, cpf: string, telefone: string){
         this._nome = nome;
         this._cpf = cpf;
         this._telefone = telefone;
@@ -13,7 +13,7 @@ export abstract class Pessoa{
     get nome(){
         return this._nome;
     }
-    set nome(value: String){
+    set nome(value: string){
         this._nome = value;
     }
 
@@ -21,7 +21,7 @@ export abstract class Pessoa{
         return this._cpf;
     }
 
-    set cpf(value: String){
+    set cpf(value: string){
         this._cpf = value;
     }
 
@@ -29,7 +29,7 @@ export abstract class Pessoa{
         return this._telefone;
     }
 
-    set telefone(value: String){
+    set telefone(value: string){
         this._telefone = value;
     }
 

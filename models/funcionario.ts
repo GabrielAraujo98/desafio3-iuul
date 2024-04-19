@@ -6,7 +6,7 @@ export class Funcionario extends Pessoa implements IUsurario{
     private _salario: number;
     private _cargos: Cargo[] = [];
 
-    constructor(salario: number, cargo: Cargo, nome: any, cpf: any, telefone: any){
+    constructor(salario: number, cargo: Cargo, nome: string, cpf: string, telefone: string){
         super(nome, cpf, telefone)
         this._cargos.push(cargo);
         this._salario = salario;

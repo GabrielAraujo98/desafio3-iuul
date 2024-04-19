@@ -1,7 +1,7 @@
 export class Cargo{
-    private _nome: String;
+    private _nome: string;
 
-    constructor(nome: String){
+    constructor(nome: string){
         this._nome = nome;
     }
 
@@ -9,7 +9,7 @@ export class Cargo{
         return this._nome;
     }
 
-    public set nome(value: String){
+    public set nome(value: string){
         this._nome = value;
     }
 }

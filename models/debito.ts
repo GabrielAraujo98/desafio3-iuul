@@ -10,16 +10,8 @@ export class Debito{
     get valor(){
         return this._valor;
     }
-
-    set valor(limite: number){
-        this._valor = limite;
-    }
-
+    
     get data(){
         return this._data;
-    }
-
-    set data(value: Date){
-        this._data = value;
     }
 }

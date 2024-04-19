@@ -11,15 +11,7 @@ export class Credito{
         return this._valor;
     }
 
-    set valor(value: number){
-        this._valor = value;
-    }
-
     get data(){
         return this._data;
-    }
-
-    set data(value: Date){
-        this._data = value;
     }
 }

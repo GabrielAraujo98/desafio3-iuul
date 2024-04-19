@@ -1,12 +1,12 @@
 export class Endereco {
-    private _cep: String;
-    private _logradouro: String;
-    private _numero: String;
-    private _complemento: String;
-    private _cidade: String;
-    private _uf: String;
+    private _cep: string;
+    private _logradouro: string;
+    private _numero: string;
+    private _complemento: string;
+    private _cidade: string;
+    private _uf: string;
 
-    constructor(cep: String, logradouro: String, numero: String, complemento: String, cidade:String, uf: String){
+    constructor(cep: string, logradouro: string, numero: string, complemento: string, cidade:string, uf: string){
         this._cep = cep;
         this._logradouro = logradouro;
         this._numero = numero;
@@ -19,7 +19,7 @@ export class Endereco {
         return this._cep;
     }
 
-    set cep(value: String){
+    set cep(value: string){
         this._cep = value;
     }
 
@@ -27,7 +27,7 @@ export class Endereco {
         return this._logradouro;
     }
 
-    set logradouro(value: String){
+    set logradouro(value: string){
         this._logradouro = value;
     }
 
@@ -35,7 +35,7 @@ export class Endereco {
         return this._numero;
     }
 
-    set numero(value: String){
+    set numero(value: string){
         this._numero = value;
     }
 
@@ -43,7 +43,7 @@ export class Endereco {
         return this._complemento;
     }
 
-    set complemento(value: String){
+    set complemento(value: string){
         this._complemento = value;
     }
 
@@ -51,7 +51,7 @@ export class Endereco {
         return this._cidade;
     }
 
-    set cidade(value: String){
+    set cidade(value: string){
         this._cidade = value;
     }
 
@@ -59,7 +59,7 @@ export class Endereco {
         return this._uf;
     }
 
-    set uf(value: String){
+    set uf(value: string){
         this._uf = value;
     }
 }

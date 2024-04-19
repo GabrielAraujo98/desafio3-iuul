@@ -3,7 +3,7 @@ import { Conta } from "./conta";
 export class ContaCorrente extends Conta{
     private _limite: number;
 
-    constructor(numero: String, limite: number){
+    constructor(numero: string, limite: number){
         super(numero);
         this._limite = limite;
     }

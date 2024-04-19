@@ -17,7 +17,7 @@ cliente1.contas[0].depositar(100.00);
 cliente1.contas[0].depositar(100.00);
 
 //Efetuando saques
-cliente1.contas[0].sacar(50.00);
+var saldo = (cliente1.contas[0] as ContaCorrente).calcularSaldo();
 
 //Exibindo saldo da conta
-console.log(conta1.calcularSaldo());
+console.log(saldo);

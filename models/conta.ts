@@ -2,20 +2,16 @@ import { Debito } from "./debito";
 import { Credito } from "./credito";
 
 export abstract class Conta {
-    private _numero: String;
+    private _numero: string;
     private _debitos: Debito[] = [];
     private _creditos: Credito[] = [];
 
-    constructor(numero: String){
+    constructor(numero: string){
         this._numero = numero;
     }
 
     get numero(){
         return this._numero;
-    }
-
-    set numero(value: String){
-        this._numero = value;
     }
 
     get debito(){
@@ -26,7 +22,7 @@ export abstract class Conta {
         return this._creditos;
     }
 
-    depositar(value: Number){
+    depositar(value: number){
         let credito = new Credito(value, new Date());
         this._creditos.push(credito);
         return this._creditos;

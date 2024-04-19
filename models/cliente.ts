@@ -5,11 +5,11 @@ import { IUsurario } from "./iusuario";
 
 export class Cliente extends Pessoa implements IUsurario{
 
-    private _vip: Boolean;
+    private _vip: boolean;
     private _enderecos: Endereco[] = [];
     private _contas: Conta[] = [];
     
-    constructor(vip: Boolean, enderecos: Endereco, contas: Conta, nome: String, cpf: String, telefone: String){
+    constructor(vip: boolean, enderecos: Endereco, contas: Conta, nome: string, cpf: string, telefone: string){
         super(nome, cpf, telefone);
         this._vip = vip;
         this._enderecos.push(enderecos);
@@ -20,7 +20,7 @@ export class Cliente extends Pessoa implements IUsurario{
         return this._vip;
     }
 
-    set vip(value: Boolean){
+    set vip(value: boolean){
         this._vip = value;
     }
 

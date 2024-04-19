@@ -1,4 +1,4 @@
 export interface IUsurario{
-    autenticar: () => Boolean;
+    autenticar: () => boolean;
 }
 
